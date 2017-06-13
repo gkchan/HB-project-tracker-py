@@ -44,7 +44,7 @@ def make_new_student(first_name, last_name, github):
     database and print a confirmation message.
     """
     QUERY = """
-        INSERT INTO students
+        INSERT INTO students (first_name, last_name, github)
             VALUES (:first_name, :last_name, :github)
         """
 
